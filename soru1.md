@@ -29,7 +29,7 @@ unnest(purchase) as p) as p
 from `dsmbootcamp.bora_colakoglu.semi_structured_hw`
 cross join unnest(manufacture) as m
 cross join unnest(car) as c
-on c.id = m.id --buna neden gerek var hiv bir fikrim yok ama bu olmadan duzgun calismiyo
+on c.id = m.id --buna neden gerek var hic bir fikrim yok ama bu olmadan duzgun calismiyo
 order by name desc, c.id;
 
 ```
